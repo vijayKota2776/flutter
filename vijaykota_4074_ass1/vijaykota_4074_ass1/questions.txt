@@ -1,0 +1,401 @@
+# Dart 100 Practice Questions
+
+## 1. Declare all primitive types in Dart
+**Category:** Variable & Data type
+**Description:** Create variables of type int, double, String, bool, and dynamic. Assign values and print using print(). Also show type inference with var and final.
+
+## 2. Swap two numbers
+**Category:** Operators
+**Description:** Take two integers (a=10, b=20). Swap using a temporary variable, then again without temp (using arithmetic or bitwise XOR). Print before and after.
+
+## 3. Largest of three numbers (ternary)
+**Category:** Operators / Conditional
+**Description:** Take three numbers. Use the ternary operator (? :) to find and print the largest.
+
+## 4. Even or odd using bitwise
+**Category:** Operators
+**Description:** Input a number and check even/odd using bitwise AND (&) with 1. Print 'Even' or 'Odd'.
+
+## 5. Arithmetic operations
+**Category:** Operators
+**Description:** Perform +, -, *, /, ~/ (integer division), and % on two integers. Print each result.
+
+## 6. Increment / Decrement
+**Category:** Operators
+**Description:** Demonstrate prefix (++a) and postfix (a++) increment, and similarly decrement. Print values to see difference.
+
+## 7. String comparison
+**Category:** Operators / Data type
+**Description:** Create two String objects with same content. Compare using == and .compareTo(). Print results.
+
+## 8. Celsius to Fahrenheit
+**Category:** Operators / Data type
+**Description:** Take temperature in Celsius (double), convert to Fahrenheit using formula (C * 9/5) + 32. Print result.
+
+## 9. Area of shapes using constants
+**Category:** Variable & Data type
+**Description:** Define constants (final) for PI. Compute area of circle (πr²), rectangle (l*w), triangle (0.5*b*h). Print.
+
+## 10. Leap year using logical operators
+**Category:** Operators / Conditional
+**Description:** Input a year. Check if leap: divisible by 400 OR (divisible by 4 AND not divisible by 100). Use &&, ||, !.
+
+## 11. Positive, negative or zero
+**Category:** Conditional statements
+**Description:** Read an integer. Use if-else-if to print whether positive, negative, or zero.
+
+## 12. Day of week using switch
+**Category:** Conditional statements
+**Description:** Take a number 1-7. Use switch-case to print corresponding day (1=Monday...7=Sunday). Include default for invalid.
+
+## 13. Grade calculation
+**Category:** Conditional statements
+**Description:** Input marks (0-100). Using if-else ladder assign grade: A (≥90), B (75-89), C (60-74), D (45-59), F (<45). Print grade.
+
+## 14. Vowel or consonant using switch
+**Category:** Conditional statements
+**Description:** Read a character. Use switch-case to check if vowel (a,e,i,o,u - both cases). Print vowel/consonant.
+
+## 15. Maximum of four numbers (nested if)
+**Category:** Conditional statements
+**Description:** Take four numbers. Use nested if-else to find and print the maximum.
+
+## 16. Print 1 to 100
+**Category:** Loop statements
+**Description:** Use for loop to print numbers from 1 to 100.
+
+## 17. Sum of natural numbers (while)
+**Category:** Loop statements
+**Description:** Take n. Use while loop to compute sum = 1+2+...+n. Print sum.
+
+## 18. Multiplication table (do-while)
+**Category:** Loop statements
+**Description:** Take a number. Use do-while loop to print its multiplication table from 1 to 10.
+
+## 19. Fibonacci series (for loop)
+**Category:** Loop statements
+**Description:** Take n (number of terms). Print Fibonacci: 0,1,1,2,3,5... up to n terms.
+
+## 20. Prime number check (for + break)
+**Category:** Loop statements
+**Description:** Input a number. Use for loop and break to check prime. Print 'Prime' or 'Not prime'.
+
+## 21. Factorial using for loop
+**Category:** Loop statements
+**Description:** Take n. Compute factorial (n!) using for loop. Print result.
+
+## 22. Pattern printing (pyramid)
+**Category:** Loop statements
+**Description:** Use nested loops to print a right-angled triangle or pyramid pattern (stars).
+
+## 23. Add two numbers (function)
+**Category:** Function
+**Description:** Write a function add(int a, int b) that returns sum. Call from main() and print.
+
+## 24. Palindrome check (function)
+**Category:** Function
+**Description:** Write isPalindrome(int num) returns bool. Check if number is palindrome.
+
+## 25. Recursive factorial
+**Category:** Function
+**Description:** Write recursive factorial(int n) that returns n!. Call and print.
+
+## 26. GCD using Euclid's algorithm
+**Category:** Function
+**Description:** Write gcd(int a, int b) returns GCD. Use recursion or loop. Test.
+
+## 27. Sum of digits (function)
+**Category:** Function
+**Description:** Write sumOfDigits(int num) returns sum of digits. Test.
+
+## 28. Student class with constructor
+**Category:** Class object / Constructor
+**Description:** Define Student class with fields: rollNo (int), name (String), marks (double). Create a parameterized constructor and method display() to print details.
+
+## 29. Box class with volume
+**Category:** Class object
+**Description:** Create Box class with length, breadth, height. Method volume() returns l*b*h. Instantiate and print volume.
+
+## 30. Constructor overloading
+**Category:** Constructor
+**Description:** In a class, define a default constructor and a parameterized constructor. Show both being used.
+
+## 31. Car class with display
+**Category:** Class object
+**Description:** Create Car class with brand, model. Method display(). Create two objects and call display.
+
+## 32. Using 'this' keyword
+**Category:** Class object
+**Description:** Class where constructor parameters have same names as instance variables. Use 'this' to resolve.
+
+## 33. Static variable and method
+**Category:** Class object
+**Description:** Create class with static variable count. Increment in constructor. Add static method showCount(). Show shared.
+
+## 34. BankAccount with encapsulation
+**Category:** Encapsulation
+**Description:** Make BankAccount class with private double balance. Provide getBalance() and setBalance(double) with validation (no negative).
+
+## 35. Private fields + getter/setter
+**Category:** Encapsulation
+**Description:** Create class with private fields (name, age). Provide getters and setters. Demonstrate setting and getting.
+
+## 36. Animal inheritance (Dog, Cat)
+**Category:** Inheritance
+**Description:** Create Animal class with sound() method. Extend Dog and Cat, override sound(). In main, create objects and call sound().
+
+## 37. super keyword usage
+**Category:** Inheritance
+**Description:** Parent class with constructor and method. In child, use super() to call parent constructor and super.method() to call parent method.
+
+## 38. Multi-level inheritance
+**Category:** Inheritance
+**Description:** Create classes A, B extends A, C extends B. Show constructor chaining (each prints a message).
+
+## 39. Shape + runtime polymorphism
+**Category:** Method overriding / Runtime polymorphism
+**Description:** Create Shape class with draw(). Circle and Rectangle override draw(). Use Shape reference to call draw() (runtime polymorphism).
+
+## 40. Parent reference, child object
+**Category:** Method overriding / Runtime polymorphism
+**Description:** Assign child object to parent reference. Call overridden method – executes child's version.
+
+## 41. Dynamic method dispatch
+**Category:** Runtime polymorphism
+**Description:** Create List of Shape references, store Circle and Rectangle objects. Loop and call draw() – shows runtime polymorphism.
+
+## 42. Function with optional parameters
+**Category:** Function / Compile-time
+**Description:** Write a function that takes two required ints and one optional int. Show how to call with and without optional param.
+
+## 43. Function with named parameters
+**Category:** Function
+**Description:** Write a function with named parameters (e.g., {int a, int b}). Call using named arguments.
+
+## 44. Function with default values
+**Category:** Function
+**Description:** Write a function with default parameter values. Call with different arguments.
+
+## 45. Abstract Vehicle
+**Category:** Abstraction
+**Description:** Create abstract class Vehicle with abstract start(). Extend with Car and Bike, implement start().
+
+## 46. Abstract with concrete method
+**Category:** Abstraction
+**Description:** Abstract class with abstract method and concrete method. Extend and show both.
+
+## 47. Drawable interface
+**Category:** Interface
+**Description:** Define abstract class Drawable (or mixin) with draw(). Implement in Circle and Square classes. Call draw().
+
+## 48. Interface with default method (mixin)
+**Category:** Interface
+**Description:** Create a mixin with default behavior. Use it in a class.
+
+## 49. Multiple interfaces (mixins)
+**Category:** Interface
+**Description:** Implement two mixins (e.g., Printable and Showable) in a single class.
+
+## 50. Abstract + Interface combined
+**Category:** Abstraction / Interface
+**Description:** Create an abstract class and a mixin. A class extends abstract and uses mixin.
+
+## 51. Swap using XOR
+**Category:** Operators
+**Description:** Swap two numbers using bitwise XOR without temp. Print before and after.
+
+## 52. Divisible by 5 and 11
+**Category:** Conditional statements
+**Description:** Input number. Check if divisible by both 5 and 11 using if-else. Print result.
+
+## 53. Even numbers 1-100
+**Category:** Loop statements
+**Description:** Use for loop to print all even numbers between 1 and 100.
+
+## 54. Reverse a number
+**Category:** Loop statements
+**Description:** Input number. Use while loop to reverse digits. Print reversed number.
+
+## 55. Count digits (do-while)
+**Category:** Loop statements
+**Description:** Take integer. Use do-while loop to count digits. Print count.
+
+## 56. Armstrong numbers up to 1000
+**Category:** Loop statements
+**Description:** Use for loop to find and print all Armstrong numbers between 1 and 1000.
+
+## 57. Perfect number function
+**Category:** Function
+**Description:** Write isPerfect(int n) returns true if sum of divisors equals n. Test.
+
+## 58. Reverse string function
+**Category:** Function
+**Description:** Write reverseString(String s) returns reversed string (use split/reverse/join).
+
+## 59. Rectangle class with area/perimeter
+**Category:** Class object
+**Description:** Create Rectangle class with length, width. Methods area() and perimeter(). Instantiate and print.
+
+## 60. Copy constructor (factory constructor)
+**Category:** Constructor
+**Description:** Create a class with a factory constructor or named constructor to copy an object.
+
+## 61. Employee/Manager inheritance
+**Category:** Inheritance
+**Description:** Employee class with name, salary. Manager extends Employee and adds bonus. Use super.
+
+## 62. Override toString()
+**Category:** Method overriding
+**Description:** Override toString() in a class to return formatted details. Print object.
+
+## 63. List of Shape (runtime)
+**Category:** Runtime polymorphism
+**Description:** Create List of Shape references, store different shapes, call draw() in loop.
+
+## 64. Constructor overloading (named constructors)
+**Category:** Constructor
+**Description:** Create class with default constructor and named constructors. Use both.
+
+## 65. Abstract Bird
+**Category:** Abstraction
+**Description:** Abstract class Bird with fly() and abstract makeSound(). Extend and implement.
+
+## 66. Playable interface (mixin)
+**Category:** Interface
+**Description:** Create mixin Playable with play(). Implement in Guitar and Piano classes.
+
+## 67. Mixin with default/static behavior
+**Category:** Interface
+**Description:** Create a mixin with a concrete method. Use in class.
+
+## 68. Multiple mixins
+**Category:** Interface
+**Description:** Use two mixins (e.g., Flyable and Eatable) in one class.
+
+## 69. Abstract + Mixin together
+**Category:** Abstraction / Interface
+**Description:** Abstract class Animal and mixin Pet. Dog extends Animal with Pet.
+
+## 70. Encapsulation with validation
+**Category:** Encapsulation
+**Description:** Class with private fields and setters that validate (e.g., age 0-120).
+
+## 71. Floyd's triangle
+**Category:** Loop statements
+**Description:** Use nested loops to print Floyd's triangle (rows of numbers).
+
+## 72. LCM using while
+**Category:** Loop statements
+**Description:** Take two numbers, find LCM using while loop (or formula).
+
+## 73. Palindrome string function
+**Category:** Function
+**Description:** Write isPalindrome(String s) checks if string is palindrome.
+
+## 74. Count vowels in string
+**Category:** Function
+**Description:** Function to count vowels (a,e,i,o,u) in a given string.
+
+## 75. Circle class
+**Category:** Class object
+**Description:** Circle class with radius, methods area() and circumference().
+
+## 76. Static block and method
+**Category:** Class object
+**Description:** Class with static variable and static method. Show usage (Dart uses static).
+
+## 77. Function with optional positional params
+**Category:** Function
+**Description:** Write a function with optional positional parameters ([int a, int b]). Call with different arguments.
+
+## 78. Runtime polymorphism with Animal
+**Category:** Runtime polymorphism
+**Description:** Animal reference to Dog and Cat objects, call overridden sound().
+
+## 79. Abstract Shape with area/volume
+**Category:** Abstraction
+**Description:** Abstract class with abstract area() and volume().
+
+## 80. Resizable mixin
+**Category:** Interface
+**Description:** Create mixin Resizable with resize(). Use in Rectangle class.
+
+## 81. Anagram check
+**Category:** Loop statements / Function
+**Description:** Write function to check if two strings are anagrams (same letters).
+
+## 82. Pascal triangle
+**Category:** Loop statements
+**Description:** Print Pascal triangle using nested loops.
+
+## 83. Factorial iterative & recursive
+**Category:** Function
+**Description:** Write both iterative and recursive factorial functions and compare.
+
+## 84. Final variable and method
+**Category:** Class object
+**Description:** Class with final variable and final method. Show cannot be changed/overridden.
+
+## 85. Overriding with covariant return
+**Category:** Method overriding
+**Description:** Override method with covariant return type in child (Dart supports).
+
+## 86. Abstract class with final method
+**Category:** Abstraction
+**Description:** Abstract class containing a final method (cannot be overridden).
+
+## 87. Mixin with static method
+**Category:** Interface
+**Description:** Create mixin with static method. Call it.
+
+## 88. is operator (instanceof)
+**Category:** Inheritance / Operators
+**Description:** Use is operator to check object type in inheritance hierarchy.
+
+## 89. Private constructor (singleton)
+**Category:** Constructor / Encapsulation
+**Description:** Create class with private constructor and static instance getter (singleton).
+
+## 90. Function with named parameters and default
+**Category:** Function
+**Description:** Write function with named parameters having default values. Call with and without.
+
+## 91. Comparable interface (Comparable)
+**Category:** Interface
+**Description:** Implement Comparable in custom class to sort objects by a field.
+
+## 92. Abstract with constructor
+**Category:** Abstraction
+**Description:** Abstract class with constructor, called when child is instantiated.
+
+## 93. Read-only / write-only encapsulation
+**Category:** Encapsulation
+**Description:** Class with read-only (getter only) and write-only (setter only) fields.
+
+## 94. Multi-level overriding
+**Category:** Inheritance
+**Description:** Override a method at each level in multi-level inheritance, call with child reference.
+
+## 95. Covariant return type overriding
+**Category:** Runtime polymorphism
+**Description:** Override method with covariant return type (child returns subclass).
+
+## 96. Function with optional and named params combined
+**Category:** Function
+**Description:** Write function that has both optional positional and named parameters.
+
+## 97. Constructor chaining using : this()
+**Category:** Constructor
+**Description:** Use constructor redirection (: this()) to chain constructors.
+
+## 98. Abstract class with abstract & non-abstract
+**Category:** Abstraction
+**Description:** Abstract class with one abstract and one concrete method. Show usage.
+
+## 99. Marker interface (abstract class)
+**Category:** Interface
+**Description:** Create an empty abstract class (marker) and implement it.
+
+## 100. Complete Dart class with private fields, getters/setters
+**Category:** Encapsulation
+**Description:** Create a Dart class with private fields (starting with _), public getters/setters, and a constructor.

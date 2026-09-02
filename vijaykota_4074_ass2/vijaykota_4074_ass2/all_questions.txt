@@ -1,0 +1,156 @@
+================================================================================
+DART COLLECTIONS · LISTS, MAPS, SETS - 25 PRACTICE QUESTIONS
+Source: https://itm-flutter-assignment-2-dart.netlify.app/
+================================================================================
+
+Question 1: Create and print a List of integers
+Topic: Lists
+Task: Create a list of integers containing values [10, 20, 30, 40, 50]. Print the entire list, its first element using .first, its last element using .last, and its total length using .length.
+
+--------------------------------------------------------------------------------
+
+Question 2: Add and remove elements from a List
+Topic: Lists
+Task: Create a mutable list of strings. Add elements using .add() and .addAll(). Remove elements using .remove() and .removeAt(). Print the list after each operation.
+
+--------------------------------------------------------------------------------
+
+Question 3: Iterate over a List using for-in and forEach
+Topic: Lists
+Task: Create a list of fruits. Iterate through the list using a for-in loop to print each item. Then iterate through the list using the .forEach() method with a lambda function to print each item.
+
+--------------------------------------------------------------------------------
+
+Question 4: Filter a List using where()
+Topic: Lists
+Task: Create a list of numbers from 1 to 20. Use the .where() method to filter out all even numbers and store them in a new list. Print both the original and filtered lists.
+
+--------------------------------------------------------------------------------
+
+Question 5: Transform a List using map()
+Topic: Lists
+Task: Create a list of integers [1, 2, 3, 4, 5]. Use the .map() method to compute the square of each number and convert the result into a new list. Print both original and transformed lists.
+
+--------------------------------------------------------------------------------
+
+Question 6: Sort a List of strings and integers
+Topic: Lists
+Task: Create a list of strings and sort it in ascending order using .sort(). Create a list of integers and sort it in descending order using a custom comparator. Print the sorted lists.
+
+--------------------------------------------------------------------------------
+
+Question 7: List operations: contains, indexOf, and sublist
+Topic: Lists
+Task: Create a list of colors. Check if a specific color exists using .contains(). Find the index of an element using .indexOf(). Extract a portion of the list using .sublist(start, end). Print the results.
+
+--------------------------------------------------------------------------------
+
+Question 8: Remove duplicates from a List using Set
+Topic: Lists / Sets
+Task: Create a list of integers containing duplicate values. Convert the list to a Set using .toSet() to eliminate duplicates, then convert it back to a List using .toList(). Print the original list, the Set, and the deduplicated List.
+
+--------------------------------------------------------------------------------
+
+Question 9: Find frequency of each element in a List
+Topic: Lists / Maps
+Task: Create a list of integers with repeating values. Count the frequency of occurrence of each element using a Map<int, int>. Print each element along with its frequency count.
+
+--------------------------------------------------------------------------------
+
+Question 10: Create and print a Map (key-value pairs)
+Topic: Maps
+Task: Create a map storing student names as keys and their marks as values. Print the entire map. Access and print the marks of a specific student using key lookup.
+
+--------------------------------------------------------------------------------
+
+Question 11: Add, update, and remove entries in a Map
+Topic: Maps
+Task: Create a map of student scores. Add a new key-value pair, update an existing student's score, and remove an entry using .remove(). Print the map state after each modification.
+
+--------------------------------------------------------------------------------
+
+Question 12: Iterate over a Map using keys, values, and entries
+Topic: Maps
+Task: Create a map of country names to their capital cities. Iterate over the keys using .keys, over the values using .values, and over the key-value pairs using .entries with a loop. Print the results.
+
+--------------------------------------------------------------------------------
+
+Question 13: Check if a key or value exists in a Map
+Topic: Maps
+Task: Create a map of product names and their prices. Use .containsKey() to check for the presence of specific keys and .containsValue() to check for specific prices. Print the boolean results.
+
+--------------------------------------------------------------------------------
+
+Question 14: Transform a Map using map() and forEach
+Topic: Maps
+Task: Create a map mapping numbers to their squares. Use .map() to create a new map where keys and values are swapped. Use .forEach() to iterate over and print all key-value pairs.
+
+--------------------------------------------------------------------------------
+
+Question 15: Merge two Maps using spread operator and addAll
+Topic: Maps
+Task: Create two separate maps. Merge them into a single map using the spread operator (...). Merge them using the .addAll() method. Observe and demonstrate how duplicate keys are resolved.
+
+--------------------------------------------------------------------------------
+
+Question 16: Get keys, values, and length of a Map
+Topic: Maps
+Task: Create a map representing a user profile with multiple attributes. Convert the keys to a list using .keys.toList(), values to a list using .values.toList(), and get total entries using .length. Print all three.
+
+--------------------------------------------------------------------------------
+
+Question 17: Find frequency of characters in a String using Map
+Topic: Maps / Strings
+Task: Take a input string (e.g. 'hello world'). Count the frequency of each character (ignoring spaces) and store the results in a Map<String, int>. Print the resulting character frequency map.
+
+--------------------------------------------------------------------------------
+
+Question 18: Create and print a Set (unique elements)
+Topic: Sets
+Task: Create a Set of integers initialized with duplicate values. Print the Set to show that duplicate values are automatically removed. Print the length of the Set using .length.
+
+--------------------------------------------------------------------------------
+
+Question 19: Add and remove elements from a Set
+Topic: Sets
+Task: Create a set of programming languages. Add a single element using .add(), add multiple elements using .addAll(), and remove an element using .remove(). Print the set after each operation.
+
+--------------------------------------------------------------------------------
+
+Question 20: Set operations: union, intersection, and difference
+Topic: Sets
+Task: Create two integer sets setA and setB. Compute and print their union using .union(), intersection using .intersection(), and difference using .difference().
+
+--------------------------------------------------------------------------------
+
+Question 21: Check if an element exists in a Set
+Topic: Sets
+Task: Create a Set containing vowels ('a', 'e', 'i', 'o', 'u'). Check whether specific characters exist in the set using .contains(). Print the boolean output.
+
+--------------------------------------------------------------------------------
+
+Question 22: Convert List to Set and Set to List
+Topic: Lists / Sets
+Task: Create a list with duplicate elements. Convert the list to a Set using .toSet(), then convert that Set back into a List using .toList(). Print the original list, the set, and the final list.
+
+--------------------------------------------------------------------------------
+
+Question 23: Iterate over a Set using for-in and forEach
+Topic: Sets
+Task: Create a set of colors. Iterate over the set using a for-in loop to print each color. Then iterate over the set using the .forEach() method with a lambda function.
+
+--------------------------------------------------------------------------------
+
+Question 24: Find common elements between two Lists using Set
+Topic: Lists / Sets
+Task: Create two lists of integers that share some common elements. Convert both lists to sets and find their common elements using .intersection(). Print the common elements.
+
+--------------------------------------------------------------------------------
+
+Question 25: Remove duplicates from a List using Set and preserve order
+Topic: Lists / Sets
+Task: Create a list of integers containing duplicates [3, 1, 2, 3, 1, 2, 4, 5]. Remove the duplicates using a Set while preserving the original order of first appearance (.toSet().toList()). Print the result.
+
+================================================================================
+END OF QUESTIONS
+================================================================================

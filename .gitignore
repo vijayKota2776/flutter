@@ -1,0 +1,8 @@
+# Ignore generated and large local files
+**/node_modules/
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.vscode/
+**/.DS_Store
+**/*.iml
