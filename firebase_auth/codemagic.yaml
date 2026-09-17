@@ -1,0 +1,50 @@
+workflows:
+  # ============================================================================
+  # 1. Android APK Build Workflow (Runs on Linux to save free minutes)
+  # ============================================================================
+  android-workflow:
+    name: Android APK Workflow
+    max_build_duration: 30
+    instance_type: linux_x2
+    environment:
+      flutter: stable
+      java: 17
+    scripts:
+      - name: Get Flutter Packages
+        script: |
+          flutter pub get
+      - name: Build Android Release APK
+        script: |
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+
+  # ============================================================================
+  # 2. iOS IPA Build Workflow (Runs on Cloud Mac VM - Unsigned IPA)
+  # ============================================================================
+  ios-workflow:
+    name: iOS IPA Workflow (Unsigned)
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Get Flutter Packages
+        script: |
+          flutter pub get
+      - name: Install CocoaPods
+        script: |
+          find . -maxdepth 2 -name "Podfile" -execdir pod install \;
+      - name: Build iOS (No Codesign)
+        script: |
+          flutter build ios --release --no-codesign
+      - name: Package Runner.app into .ipa
+        script: |
+          mkdir -p Payload
+          cp -r build/ios/iphoneos/Runner.app Payload/
+          zip -r firebase_auth_release_unsigned.ipa Payload
+    artifacts:
+      - "*.ipa"
+      - build/ios/ipa/*.ipa

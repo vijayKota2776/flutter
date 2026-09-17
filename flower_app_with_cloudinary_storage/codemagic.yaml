@@ -1,0 +1,94 @@
+# ==============================================================================
+# Codemagic CI/CD Configuration for Flower App
+# Supports Android (.apk / .aab) and iOS (.ipa) builds on Free Tier
+# ==============================================================================
+
+workflows:
+  # ============================================================================
+  # 1. Android Release Build Workflow (Builds APK & AAB)
+  # ============================================================================
+  android-workflow:
+    name: Android Release Build (APK & AAB)
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    environment:
+      flutter: stable
+      java: 17
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch_patterns:
+        - pattern: 'main'
+          include: true
+          source: true
+    scripts:
+      - name: Set up local.properties
+        script: |
+          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Build Android Release APK
+        script: |
+          flutter build apk --release
+      - name: Build Android Release App Bundle (AAB)
+        script: |
+          flutter build appbundle --release
+    artifacts:
+      - build/**/outputs/**/*.apk
+      - build/**/outputs/**/*.aab
+    publishing:
+      email:
+        recipients:
+          - sayalivirkar37@gmail.com
+        notify:
+          success: true
+          failure: true
+
+  # ============================================================================
+  # 2. iOS Release Build Workflow (Builds Unsigned .ipa package)
+  # ============================================================================
+  ios-workflow:
+    name: iOS Release Build (Unsigned IPA)
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch_patterns:
+        - pattern: 'main'
+          include: true
+          source: true
+    scripts:
+      - name: Get Flutter packages
+        script: |
+          flutter packages pub get
+      - name: Install CocoaPods dependencies
+        script: |
+          find . -name "Podfile" -execdir pod install \;
+      - name: Build Flutter iOS without codesign
+        script: |
+          flutter build ios --release --no-codesign
+      - name: Package Payload into installable .ipa
+        script: |
+          set -e
+          cd build/ios/iphoneos
+          mkdir -p Payload
+          cp -r Runner.app Payload/
+          zip -r flower_app_release.ipa Payload
+          cd ../../..
+    artifacts:
+      - build/ios/iphoneos/*.ipa
+    publishing:
+      email:
+        recipients:
+          - sayalivirkar37@gmail.com
+        notify:
+          success: true
+          failure: true
