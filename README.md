@@ -49,4 +49,4 @@ Practical implementations of specific features and integrations:
 *(Note: Some full-stack projects require starting the backend API separately. Refer to the specific project folders for more details.)*
 
 ---
-*Created and maintained by Vijay Kota.*
+
